@@ -116,7 +116,6 @@ body {
   /* gradient */
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   display: flex;
-  padding: 0;
   text-transform: uppercase;
   padding: 1px;
 }
@@ -177,7 +176,8 @@ body {
   padding-right: 20px;
 }
 
-.productfutures__title {
+.productfutures__title,
+.games__descr-title {
   font-size: 36px;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   text-transform: uppercase;
@@ -185,6 +185,9 @@ body {
   line-height: 41px;
   margin-bottom: 20px;
   max-width: 329px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100%
 }
 
 .productfutures__video {
@@ -228,4 +231,87 @@ body {
   padding-bottom: 10px;
   color: #F6F4F5;
   padding-left: 9px;
+}
+
+.games {
+  margin-bottom: 100px;
+}
+
+.games__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 0;
+}
+
+.games__descr {
+  flex-basis: 300px;
+}
+
+.games__title {
+  margin-bottom: 50px;
+}
+
+.games__descr-title {
+  margin-bottom: 10px;
+}
+
+.games__descr--text {
+  max-width: 300px;
+  line-height: 18px;
+  padding-bottom: 30px;
+}
+
+.games__descr-btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  display: flex;
+  padding: 1px;
+}
+
+/* TODO: change color text  */
+
+.games__descr-btn--text {
+  background-color: #fff;
+  padding: 15px 47px;
+  font-weight: 700;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93)) 1;
+}
+
+/* .games__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 0;
+} */
+
+.games__list--item {
+  flex-basis: 300px;
+  padding: 20px 20px 0 20px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93)) 1;
+}
+
+.games__list-img {
+  margin-bottom: 10px;
+}
+
+.games__list--title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+}
+
+.games__list--text {
+  margin-bottom: 40px;
+  line-height: 18px;
+}
+
+.games__list--link {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 22px;
 }
