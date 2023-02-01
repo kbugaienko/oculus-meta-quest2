@@ -254,8 +254,10 @@ body {
   flex-basis: 300px;
 }
 
-.games__title {
+.games__title,
+.inbox__title {
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
 .games__descr-title {
