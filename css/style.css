@@ -184,7 +184,8 @@ body {
 
 .productfutures__title,
 .games__descr-title,
-.inbox-4__title {
+.inbox-4__title,
+.accessories__title {
   font-size: 36px;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
   text-transform: uppercase;
@@ -298,6 +299,7 @@ body {
   flex-basis: 300px;
   padding: 20px 20px 0 20px;
   border: 1px solid;
+  border-image-slice: 1;
   border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93)) 1;
   display: flex;
   flex-direction: column;
@@ -307,14 +309,16 @@ body {
   margin-bottom: 10px;
 }
 
-.games__list--title {
+.games__list--title,
+.accessories__item-title {
   margin-bottom: 10px;
   font-size: 24px;
   line-height: 28px;
   color: #070707;
 }
 
-.games__list--text {
+.games__list--text,
+.accessories__item-text {
   margin-bottom: 40px;
   line-height: 18px;
   flex-grow: 2;
@@ -429,4 +433,64 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
+}
+
+.accessories {
+  margin-bottom: 100px;
+}
+
+.accessories__subtitle {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.accessories__title {
+  max-width: max-content;
+  margin-bottom: 30px;
+}
+
+.accessories__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.accessories__item {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  padding: 18px 18px 18px 20px;
+  background: none;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+
+.accessories__item-img {
+  margin-bottom: 10px;
+}
+
+.accessories__item-title {
+  min-height: 56px;
+}
+
+.accessories__item-price {
+  font-weight: 700;
+  color: #070707;
+  margin-bottom: 20px;
+}
+
+.accessories__item-btn {
+  cursor: pointer;
+  border: none;
+  padding: 6px 91px;
+  background: none;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+
+.accessories__item-btn span {
+ text-transform: uppercase;
+ font-weight: 700;
 }
