@@ -49,6 +49,11 @@ body {
   margin: 0 auto;
 }
 
+.container-bg {
+  max-width: 1687px;
+  margin: 0 auto;
+}
+
 .header {
   border-bottom: 1px solid #CACAD6;
 }
@@ -132,7 +137,8 @@ body {
   padding: 20px 105px;
 }
 
-.buy__text {
+.buy__text,
+.oculus__text {
   font-size: 13px;
   padding-top: 10px;
 }
@@ -290,6 +296,8 @@ body {
   padding: 20px 20px 0 20px;
   border: 1px solid;
   border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93)) 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .games__list-img {
@@ -306,6 +314,7 @@ body {
 .games__list--text {
   margin-bottom: 40px;
   line-height: 18px;
+  flex-grow: 2;
 }
 
 .games__list--link {
@@ -314,4 +323,23 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   padding-bottom: 22px;
+}
+
+.oculus {
+  margin-bottom: 108px;
+}
+
+.oculus__img {
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.buy-btn--oculus {
+  margin: 0 auto;
+}
+
+.oculus__text {
+  text-align: center;
 }
