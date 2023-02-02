@@ -435,7 +435,8 @@ body {
   font-weight: 700;
 }
 
-.accessories {
+.accessories,
+.form {
   margin-bottom: 100px;
 }
 
@@ -493,4 +494,75 @@ body {
 .accessories__item-btn span {
  text-transform: uppercase;
  font-weight: 700;
+}
+
+.form__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  border-right: 1px solid #CACAD6;
+}
+
+.form__item {
+  max-width: 50%;
+}
+
+.form__item--title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+  margin-bottom: 10px;
+}
+
+.form__item--text {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.form__item--email {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form__item--email--inp {
+  height: 55px;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #CACAD6;
+  outline: 0;
+  padding: 10px 10px;
+  background: transparent;
+}
+
+.form__item--email--inp::placeholder {
+  color: #CACAD6;
+  font-size: 13px;
+}
+
+.form__item--email--inp:focus::placeholder {
+  color: transparent;
+}
+
+.form-btn {
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #CACAD6;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-btn span {
+  color: #5C5C5E;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__email {
+  align-self: flex-end;
+  padding-right: 18px;
 }
