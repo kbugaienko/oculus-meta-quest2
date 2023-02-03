@@ -35,6 +35,16 @@ img{
   max-width: 100%;
 }
 
+button {
+  color: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+}
+
 body {
   font-family: 'Helvetica', sans-serif;
   font-weight: 400;
@@ -54,8 +64,8 @@ body {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   height: 80px;
 }
@@ -64,9 +74,13 @@ body {
   display: flex;
   gap: 0 20px;
 }
+.logo {
+  justify-self: center;
+}
 
 .basket {
   position: relative;
+  justify-self: end;
 }
 
 /* This class to display the number of items in the basket */
@@ -98,6 +112,7 @@ body {
   padding-top: 16%;
   font-size: 96px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .top__subtitle {
@@ -136,4 +151,99 @@ body {
 .buy__text {
   font-size: 13px;
   padding-top: 10px;
+}
+
+.features {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.features__titles {
+  display: flex;
+}
+
+.features__title {
+  flex-basis: 300px;
+  padding-right: 20px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.features__text {
+  max-width: 330px;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 2px;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.tabs__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.tabs__btn-item {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tabs__btn-item--active {
+  color: #070707;
+}
+
+.tabs__content-item {
+  display: grid;
+  grid-template-columns: auto 281px;
+  grid-template-rows: auto 150px;
+  gap: 40px;  
+}
+
+.tabs__content-box--title {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.tabs__content-box--text {
+  line-height: 18px;
+}
+
+.tabs__content-img {
+  grid-row: 1/-1;
+  align-self: stretch;
+}
+
+.video {
+  grid-column: 2/3;
+  width: 280px;
+  height: 150px;
+  background-image: url(../images/content-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 9px 10px;
+}
+
+.video span {
+  font-size: 13px;
+  color: #F6F4F5;
+}
+
+.video__btn {
+  margin-left: 22px;
 }
