@@ -180,8 +180,8 @@ body {
   line-height: 41px;
   margin-bottom: 20px;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tabs {
@@ -285,8 +285,8 @@ body {
   line-height: 41px;
   text-transform: uppercase;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .game__descr-text {
@@ -296,19 +296,21 @@ body {
 .game__link {
   display: inline-block;
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   font-weight: 700;
   padding: 16px 48px;
   text-align: center;
-  border: 1px solid #BC10D8;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 }
 
 .game__item {
-  border: 1px solid #BC10D8;
   padding: 10px 20px 18px;
   display: flex;
   flex-direction: column;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 }
 
 .game__item-img {
@@ -329,8 +331,8 @@ body {
 
 .game__item-link {
   background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-top: auto;
 }
 
@@ -436,4 +438,70 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+
+.accessories {
+ margin-bottom: 100px; 
+}
+
+.accessories__title {
+  margin-bottom: 30px;
+}
+
+.accessories__text {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 30px;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accessories__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.accessories__item {
+  padding: 20px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.accessories__item-img {
+  margin-bottom: 10px;
+}
+
+.accessories__item-title {
+  font-size: 24px;
+  color: #070707;
+  min-height: 67px;
+}
+
+.accessories__item-text {
+  margin-bottom: 35px;
+  margin-top: auto;
+}
+
+.accessories__item-price {
+  font-weight: 700;
+  line-height: 18px;
+  color: #070707;
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+
+.accessories__item-btn {
+  padding: 6px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
 }
