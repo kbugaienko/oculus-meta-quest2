@@ -596,7 +596,7 @@ body {
   }
   .equipment__box {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   .equipment__box-item--title {
     display: none;
@@ -636,6 +636,9 @@ body {
   .buy-btn__price {
     padding: 20px 50px;
   }
+  .promo__inner {
+    min-height: 350px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -651,6 +654,9 @@ body {
 @media (max-width: 480px) {
   .game__link {
     padding: 10px 10px;
+  }
+  .promo__inner {
+    min-height: 280px;
   }
 }
 
