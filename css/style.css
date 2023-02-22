@@ -586,3 +586,55 @@ body {
   gap: 20px;
   justify-self: end;
 }
+
+@media (max-width: 740px) {
+  .nav {
+    grid-template-columns: 2fr 2fr 0.5fr;
+  }
+  .top__title {
+    font-size: 82px;
+  }
+  .menu {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .buy-btn__text,
+  .buy-btn__price {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .top__title {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: 420px) {
+  .top__title {
+    font-size: 52px;
+  }
+  .top__subtitle {
+    font-size: 30px;
+  }
+  .buy-btn__text, .buy-btn__price {
+    padding: 15px 30px;
+  }
+  .nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 348px) {
+  .top__title {
+    font-size: 42px;
+  }
+  .top__subtitle {
+    font-size: 24px;
+  }
+}
