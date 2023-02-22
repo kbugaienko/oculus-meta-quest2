@@ -615,6 +615,9 @@ body {
   .tabs__content-box {
     padding-bottom: 20px;
   }
+  .game__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 620px) {
@@ -634,12 +637,22 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .game__link {
+    padding: 10px 10px;
+  }
+}
+
 @media (max-width: 420px) {
   .top__title {
     font-size: 52px;
   }
-  .top__subtitle {
+  .top__subtitle,
+  .game__descr-title {
     font-size: 30px;
+  }
+  .game__item-title {
+    font-size: 20px;
   }
   .buy-btn__text, .buy-btn__price {
     padding: 15px 30px;
