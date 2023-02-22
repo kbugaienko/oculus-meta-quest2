@@ -629,6 +629,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
+  .accessories__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .accessories__item {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -668,7 +674,8 @@ body {
   .game__descr-title {
     font-size: 30px;
   }
-  .game__item-title {
+  .game__item-title,
+  .accessories__item-title {
     font-size: 20px;
   }
   .buy-btn__text, .buy-btn__price {
