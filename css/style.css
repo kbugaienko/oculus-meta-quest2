@@ -594,6 +594,13 @@ body {
   .features__title {
     flex-basis: 220px;
   }
+  .equipment__box {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .equipment__box-item--title {
+    display: none;
+  }
 }
 
 @media (max-width: 740px) {
@@ -617,6 +624,10 @@ body {
   }
   .game__inner {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .equipment__box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
 }
 
