@@ -601,9 +601,12 @@ body {
   .equipment__box-item--title {
     display: none;
   }
+  .nav {
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 741px) {
   .nav {
     grid-template-columns: 2fr 2fr 0.5fr;
   }
@@ -635,6 +638,26 @@ body {
   .accessories__item {
     padding: 10px;
   }
+  .contacts__box {
+    display: block;
+    padding-right: 20px;
+  }
+  .contacts__text {
+    margin-bottom: 15px;
+  }
+  .footer {
+    padding: 15px 0;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 125px;
+  }
+  .logo__footer {
+    order: -1;
+  }
 }
 
 @media (max-width: 620px) {
@@ -654,13 +677,6 @@ body {
   .features__text {
     line-height: 36px;
     font-size: 30px;
-  }
-  .contacts__box {
-    display: block;
-    padding-right: 20px;
-  }
-  .contacts__text {
-    margin-bottom: 15px;
   }
 }
 
@@ -691,8 +707,12 @@ body {
   .nav {
     grid-template-columns: repeat(2, 1fr);
   }
-  .logo {
+  .logo__header {
     display: none;
+  }
+  .menu {
+    font-size: 14px;
+    gap: 0 10px;
   }
 }
 
