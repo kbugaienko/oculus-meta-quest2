@@ -192,7 +192,7 @@ body {
 .tabs__btn {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .tabs__btn-item {
@@ -648,7 +648,7 @@ body {
   .footer {
     padding: 15px 0;
   }
-  .nav {
+  .nav__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -674,10 +674,6 @@ body {
   .top__title {
     font-size: 62px;
   }
-  .features__text {
-    line-height: 36px;
-    font-size: 30px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -686,6 +682,30 @@ body {
   }
   .promo__inner {
     min-height: 280px;
+  }
+  .features {
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  .game,
+  .buy,
+  .equipment,
+  .promo,
+  .accessories,
+  .contacts {
+    margin-bottom: 50px;
+  }
+  .features__text,
+  .game__descr-title,
+  .accessories__text {
+    line-height: 36px;
+    font-size: 30px;
+  }
+  .tabs {
+    grid-template-columns: 130px auto;
+  }
+  .tabs__btn-item {
+    text-align: start;
   }
 }
 
