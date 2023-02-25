@@ -32,3 +32,4 @@ This work is based on the video of the master class from **[Site layout on grids
 
 ![iPhoneSE-img](/images/demo/iPhoneSE_1.jpg)
 ![iPhoneSE-img](/images/demo/iPhoneSE_2.jpg)
+![iPhoneSE-img](/images/demo/iPhoneSE_3.jpg)
