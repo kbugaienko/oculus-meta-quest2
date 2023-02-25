@@ -236,6 +236,7 @@ body {
 .tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
+  object-fit: cover;
 }
 
 .video {
@@ -473,6 +474,7 @@ body {
 
 .accessories__item-img {
   margin-bottom: 10px;
+  object-fit: cover;
 }
 
 .accessories__item-title {
@@ -627,6 +629,7 @@ body {
   }
   .game__inner {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
   .equipment__box {
     grid-template-columns: repeat(2, 1fr);
@@ -634,6 +637,7 @@ body {
   }
   .accessories__items {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
   .accessories__item {
     padding: 10px;
@@ -661,9 +665,12 @@ body {
 }
 
 @media (max-width: 620px) {
-  .buy-btn__text,
-  .buy-btn__price {
-    padding: 20px 50px;
+  .buy-btn {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .top {
+    text-align: center;
   }
   .promo__inner {
     min-height: 350px;
@@ -721,8 +728,9 @@ body {
   .accessories__item-title {
     font-size: 20px;
   }
-  .buy-btn__text, .buy-btn__price {
-    padding: 15px 30px;
+  .accessories__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
   .nav {
     grid-template-columns: repeat(2, 1fr);
